@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3002 --webpack -H 127.0.0.1",
+    "dev:turbo": "next dev -p 3002",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3002",
+    "refresh": "npm run build && npm run start",
     "lint": "eslint"
   },
   "dependencies": {

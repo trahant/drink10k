@@ -2,21 +2,36 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### Development (with auto-refresh)
+
+Run the dev server so the browser **updates automatically** when you save files:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open **[http://localhost:3002](http://localhost:3002)** in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Fast Refresh** is on: edits to `app/page.tsx`, components, and `globals.css` will update the browser without a full reload.
+- Keep the terminal running while you work.
+- If the page spins or doesn’t load, stop the server (Ctrl+C), run `npm run dev` again from your system terminal, and wait for “Ready” before opening the URL.
+
+### Production (no auto-refresh)
+
+To run the built site locally (no live reload):
+
+```bash
+npm run build
+npm run start
+```
+
+Open [http://localhost:3002](http://localhost:3002). Restart and rebuild after making changes.
+
+### Refresh not showing updates?
+
+- **Using `npm run start`?** That server serves a **fixed build**. After you change code you must run `npm run build` then restart the server (Ctrl+C, then `npm run start` again). Or run `npm run refresh` once to rebuild and start.
+- **Using `npm run dev`?** Save the file and wait a second; the browser should update automatically. If it doesn’t, do a hard refresh (Cmd+Shift+R or Ctrl+Shift+R).
+- The app sends `Cache-Control: no-cache` for the homepage so the browser doesn’t keep serving an old copy after you rebuild.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
