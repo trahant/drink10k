@@ -1107,6 +1107,12 @@ footer {
   .hero-image-bg {
     clip-path: none;
   }
+  .flavor-strip {
+    padding: 4rem 2rem;
+  }
+  .brand-story-content {
+    padding: 4rem 2rem;
+  }
   .flavors-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1144,7 +1150,7 @@ footer {
     font-size: 3rem;
   }
   .flavors-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .features-grid {
@@ -1152,6 +1158,12 @@ footer {
   }
   .who-grid {
     grid-template-columns: 1fr;
+  }
+  .flavor-strip {
+    padding: 4rem 1.5rem;
+  }
+  .brand-story-content {
+    padding: 4rem 1.5rem;
   }
   .features,
   .ingredients,
