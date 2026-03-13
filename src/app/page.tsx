@@ -1,9 +1,9 @@
-const BOTTLE_GROUP = "/images/10k bottle.png";
+const BOTTLE_GROUP = "/images/10-K_fruitpunch.png";
 const FRUIT_PUNCH = "/images/fruit punch.png";
 const ORANGE_BOTTLE = "/images/organge bottle.png";
 const LEMON_LIME = "/images/lemon lime.png";
 const BLUE_WAVE = "/images/blue wave.png";
-const LOGO = "/images/10K_logo.png";
+const LOGO = "/images/logo5.png";
 const WHO_RUNNER =
   "https://cdn.prod.website-files.com/67eae30daa9a30d4e194c70e/6988b3d7c4d3002b8b35c513_XiZ7pRvCzro.jpg";
 const WHO_REC =
@@ -15,6 +15,8 @@ const WHO_BIKE =
 const MERCH_TEE =
   "https://cdn.prod.website-files.com/67eae30daa9a30d4e194c70e/687599d0a086126efcbfe263_Classic10-kshirt.png";
 const COACH_VIDEO = "/images/coachvideo.mp4";
+
+import LaBadge from "@/components/LaBadge";
 
 export const dynamic = "force-static";
 
@@ -70,10 +72,10 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-eyebrow">
-            <span>★</span> 10-K is back <span>★</span>
+            <span>💧</span> 10-K is back <span>💧</span>
           </div>
           <h1 className="hero-headline">
-            The Natural Thirst Quencher
+            Really Really Good Stuff.
           </h1>
           <p className="hero-sub">
             No artificial dyes. No artificial sweeteners. Real cane sugar.
@@ -363,8 +365,8 @@ export default function Home() {
           }}
         >
           *Ingredient comparisons are based on publicly available label
-          information from leading sports drink brands. Individual product
-          formulas may vary.
+          information from leading sports drink brands. Product formulas may
+          vary.
         </p>
       </section>
 
@@ -586,6 +588,38 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* LOUISIANA BADGE */}
+      <LaBadge>
+        <div className="la-badge-inner">
+          <img
+            src="/images/state1.png"
+            alt="Louisiana state icon"
+            className="la-badge-state"
+          />
+          <svg
+            className="la-badge-ring"
+            viewBox="0 0 100 100"
+            aria-hidden="true"
+          >
+            <defs>
+              <path
+                id="la-badge-circle"
+                d="M50 50 m -32, 0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0"
+              />
+            </defs>
+            <text className="la-badge-text">
+              <textPath
+                href="#la-badge-circle"
+                startOffset="50%"
+                textAnchor="middle"
+              >
+                Proudly made in Louisiana.
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </LaBadge>
     </>
   );
 }
