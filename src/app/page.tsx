@@ -526,6 +526,77 @@ export default function Home() {
         </form>
       </section>
 
+      {/* FAQ */}
+      <section className="faq" id="faq" aria-labelledby="faq-heading">
+        <div className="faq-header reveal">
+          <p className="section-label">Questions</p>
+          <h2 className="section-title" id="faq-heading">
+            Straight <em>Answers</em>
+          </h2>
+        </div>
+        <div className="faq-list">
+          <details className="faq-item reveal reveal-delay-1">
+            <summary>
+              What makes 10-K different from other sports drinks?
+            </summary>
+            <p>
+              10-K is built around a clean label: no artificial dyes, no
+              artificial sweeteners, and electrolytes in ratios meant for real
+              hydration, not label decoration. Sweetened with real cane sugar,
+              not high fructose corn syrup.
+            </p>
+          </details>
+          <details className="faq-item reveal reveal-delay-2">
+            <summary>Does 10-K use artificial dyes or sweeteners?</summary>
+            <p>
+              No. Color comes from natural sources tied to the flavor, and we
+              sweeten with real cane sugar. No aspartame, sucralose, or stevia.
+            </p>
+          </details>
+          <details className="faq-item reveal reveal-delay-3">
+            <summary>Where can I buy 10-K?</summary>
+            <p>
+              We are rolling out at select retailers. See{" "}
+              <a href="#find-us">Find Us</a> for current locations. Sign up for{" "}
+              <a href="#newsletter">retail drop alerts</a> so you know when we
+              land near you.
+            </p>
+          </details>
+          <details className="faq-item reveal reveal-delay-4">
+            <summary>Is 10-K for athletes only?</summary>
+            <p>
+              10-K is for anyone who sweats and wants hydration they can read on
+              the label: weekend runs, rec leagues, sideline weekends, or
+              everyday effort. It is not reserved for pros.
+            </p>
+          </details>
+          <details className="faq-item reveal">
+            <summary>Why real cane sugar instead of zero-calorie sweeteners?</summary>
+            <p>
+              We chose a straightforward approach: real cane sugar and a clean
+              formula. If you are comparing options, read our label next to
+              theirs. That is the point.
+            </p>
+          </details>
+          <details className="faq-item reveal">
+            <summary>Will 10-K be available in more stores?</summary>
+            <p>
+              Yes. Retail is expanding. Join the newsletter for updates on new
+              markets and partners. We will only email when there is something
+              worth knowing.
+            </p>
+          </details>
+          <details className="faq-item reveal">
+            <summary>How do I reach 10-K for questions or partnerships?</summary>
+            <p>
+              Email{" "}
+              <a href="mailto:contact@drink10k.com">contact@drink10k.com</a>.
+              We read every message.
+            </p>
+          </details>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer>
         <div className="footer-top">
@@ -575,7 +646,6 @@ export default function Home() {
           <div className="footer-col">
             <h4>Contact</h4>
             <div className="footer-contact">
-              <a href="tel:5042300001">(504) 230-0001</a>
               <a href="mailto:contact@drink10k.com">contact@drink10k.com</a>
             </div>
           </div>
